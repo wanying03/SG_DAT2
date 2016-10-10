@@ -130,6 +130,9 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
 * `grep <pattern>` does a **g**lobal search (of your entire computer) for matches
     * Hit `Ctrl + c` if you want to cancel the search.
 * Much more complex string-matching patterns can be used.
+* [example link](http://alvinalexander.com/unix/edu/examples/grep.shtml)
+
+
 
 ##### `|`
 * `<command 1> | <command 2>` pipes the results from `<command 1>` into `<command 2>`, and then the results of `<command 2>` are printed to the console
