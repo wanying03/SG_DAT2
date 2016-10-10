@@ -93,6 +93,21 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
 
 ### Intermediate commands
 
+'echo'
+
+prints out something for you
+
+echo "moo" > moo.txt echo "moo2" >> moo.txt One arrow will overwrite the file Double arrow will just add a new line to the file instead of overwriting it
+
+for loop
+
+for ((i=0; i<10; i++)) do echo foo ;done
+
+Instead of using emacs to open the entire file:
+
+
+
+
 ##### `head`
 * `head <filename>` prints the **head** (the first 10 lines) of the file
 * `head -n20 <filename>` prints the first 20 lines of the file
@@ -137,6 +152,8 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
 ##### `|`
 * `<command 1> | <command 2>` pipes the results from `<command 1>` into `<command 2>`, and then the results of `<command 2>` are printed to the console
 
+wc -l test2.csv
+
 ##### `>`
 * `<command> > <filename>` takes the output of `<command>` and saves it in `<filename>`
 * This will overwrite the file if it already exists.
@@ -159,6 +176,12 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
 * `uniq <filename>` discards all but one of the successive identical lines (thus it only keeps **uniq**ue lines)
 * `uniq -c <filename>` also records the **c**ount of the number of occurrences
 * Because lines must be successive to be counted as identical, you will usually use `sort` before `uniq`.
+
+###**shell script suffix .sh**
+
+emacs foo.sh bash foo.sh
+
+When you want to access it you need to put the $ sign CUSTOM = "$1" ARG="$2" created a custom file and run that file in bash
 
 
 ### ~/.bash_profile
